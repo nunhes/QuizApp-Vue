@@ -1,8 +1,8 @@
 [
     {
         "id": 1,
-        "img": "https://marvel-b1-cdn.bc0a.com/f00000000026007/resilienteducator.com/wp-content/uploads/2012/11/AdobeStock_60467600_cup.jpg",
-        "name": "Math",
+        "img": "https://images.pexels.com/photos/167682/pexels-photo-167682.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        "name": "Matemáticas",
         "questions": [
             {
                 "id": 1,
@@ -98,42 +98,42 @@
     },
     {
         "id": 2,
-        "img": "https://blogs.biomedcentral.com/on-biology/wp-content/uploads/sites/5/2017/12/DNA.png",
-        "name": "Biology",
+        "img": "https://images.pexels.com/photos/443547/pexels-photo-443547.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        "name": "Bioloxía",
         "questions": [
             {
                 "id": 1,
-                "text": "The Kreb Cycles occurs in the",
+                "text": "O Ciclo de Krebs ocorre nas/os",
                 "options": [
                     {
                         "id": 1,
                         "label": "A",
-                        "text": "Mitochondria",
+                        "text": "Mitocondrias",
                         "isCorrect": true
                     },
                     {
                         "id": 2,
                         "label": "B",
-                        "text": "Nucleus",
+                        "text": "Núcleos",
                         "isCorrect": false
                     },
                     {
                         "id": 3,
                         "label": "C",
-                        "text": "Rough ER",
+                        "text": "Rough ERs",
                         "isCorrect": false
                     },
                     {
                         "id": 4,
                         "label": "D",
-                        "text": "Cystol",
+                        "text": "Cystols",
                         "isCorrect": false
                     }
                 ]
             },
             {
                 "id": 2,
-                "text": "How many oxygen molecules can hemoglobin hold",
+                "text": "Cantas moléculas de osíxeno pode conter a hemoglobina",
                 "options": [
                     {
                         "id": 1,
@@ -163,30 +163,30 @@
             },
             {
                 "id": 3,
-                "text": "The cones see ___ while the rods see ___",
+                "text": "Os conos ven ____ mentres que as varas ven ____",
                 "options": [
                     {
                         "id": 1,
                         "label": "A",
-                        "text": "black and white; color",
+                        "text": "branco e negro; cor",
                         "isCorrect": false
                     },
                     {
                         "id": 2,
                         "label": "B",
-                        "text": "color; black and white",
+                        "text": "cor; branco e negro",
                         "isCorrect": true
                     },
                     {
                         "id": 3,
                         "label": "C",
-                        "text": "3D objects; 2D shapes",
+                        "text": "obxectos 3D; formas 2D",
                         "isCorrect": false
                     },
                     {
                         "id": 4,
                         "label": "D",
-                        "text": "2D shapes; 3D objects",
+                        "text": "formas 2D;obxectos 3D",
                         "isCorrect": false
                     }
                 ]
@@ -195,12 +195,12 @@
     },
     {
         "id": 3,
-        "img": "http://jobs.newscientist.com/getasset/c40a5488-11be-43b0-843f-a2e6ef9f0612/",
-        "name": "Chemistry",
+        "img": "https://images.pexels.com/photos/3735709/pexels-photo-3735709.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        "name": "Química",
         "questions": [
             {
                 "id": 1,
-                "text": "What is the composition of table salt",
+                "text": "Cal é a composición do sal de mesa",
                 "options": [
                     {
                         "id": 1,
@@ -230,7 +230,7 @@
             },
             {
                 "id": 2,
-                "text": "What is Potassium's chemical symbol",
+                "text": "Cal é o símbolo químico do potasio",
                 "options": [
                     {
                         "id": 1,
@@ -260,7 +260,7 @@
             },
             {
                 "id": 3,
-                "text": "Which is not organinc",
+                "text": "Que non é orgánico",
                 "options": [
                     {
                         "id": 1,

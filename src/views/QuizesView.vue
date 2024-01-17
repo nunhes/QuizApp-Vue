@@ -31,8 +31,8 @@ const enter = (el) => {
 <template>
 	<div>
 		<header>
-			<h1>Quizes</h1>
-			<input v-model.trim="search" type="text" placeholder="Search..." />
+			<h1>Cuestionarios</h1>
+			<input v-model.trim="search" type="text" placeholder="Buscar..." />
 		</header>
 		<div class="options-container">
 			<TransitionGroup appear @before-enter="beforeEnter" @enter="enter">
@@ -54,24 +54,34 @@ header {
 	margin-bottom: 10px;
 	margin-top: 30px;
 	display: flex;
-	align-items: center;
-}
+	flex-direction: row;
+	justify-content: start;
 
-header h1 {
+	h1 {
 	font-weight: bold;
 	margin-right: 30px;
-}
+	}
 
-header input {
+	input {
 	border: none;
 	background-color: rgba(128, 128, 128, 0.1);
 	padding: 10px;
 	border-radius: 5px;
+		max-width: 300px;
+		margin-left: 5px;
+	}
 }
 
 .options-container {
 	display: flex;
 	flex-wrap: wrap;
+	gap: 10px;
 	margin-top: 40px;
+}
+
+@media (max-width: 800px) {
+	header {
+		flex-direction: column;
+	}
 }
 </style>

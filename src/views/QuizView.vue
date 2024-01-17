@@ -32,8 +32,33 @@ const onOptionSelected = (isCorrect) => {
 	<div>
 		<QuizHeader :questionStatus="questionStatus" :barPercentage="barPercentage" />
 		<div>
-			<Question v-if="!showResults" :question="quiz.questions[currentQuestionIndex]" @selectOption="onOptionSelected" />
+			<Question v-if="!showResults" :question="quiz.questions[currentQuestionIndex]"
+				@selectOption="onOptionSelected" />
 			<Result v-else :quizQuestionLength="quiz.questions.length" :numberOfCorrectAnswers="numberOfCorrectAnswers" />
 		</div>
 	</div>
+	<footer>
+		<h2>{{ quiz.name }}</h2>
+		<RouterLink to="/">Volver</RouterLink>
+	</footer>
 </template>
+
+<style lang="scss" scoped>
+footer {
+	display: flex;
+	justify-content: center;
+
+	a {
+		padding: 6px 12px;
+		background: bisque;
+		border-radius: 5px;
+		text-decoration: none;
+		font-size: 16px;
+		margin-left: 16px;
+
+		:hover {
+			background: rgb(128, 78, 17);
+		}
+	}
+}
+</style>

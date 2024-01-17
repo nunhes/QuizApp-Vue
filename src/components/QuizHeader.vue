@@ -6,25 +6,25 @@ const { questionStatus, barPercentage } = defineProps(['questionStatus', 'barPer
 
 <template>
 	<header>
-		<h4>Question {{ questionStatus }}</h4>
+		<h4>Pregunta {{ questionStatus }}</h4> 
 		<div class="bar">
-			<div class="completion" :style="{width: barPercentage}"></div>
+			<div class="completion" :style="{ width: barPercentage }"></div>
 		</div>
 	</header>
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
 header {
 	margin-top: 20px;
-}
 
-header h4 {
+	h4 {
 	font-size: 30px;
+	}
 }
 
 .bar {
 	width: 300px;
-	height: 50px;
+	height: 30px;
 	border: 3px solid bisque;
 }
 

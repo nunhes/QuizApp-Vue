@@ -7,9 +7,9 @@ const { quizQuestionLength, numberOfCorrectAnswers } = defineProps(['quizQuestio
 
 <template>
 	<div class="results">
-		<p>Your Results...</p>
+		<p>Teus resultados...</p>
 		<h1>{{ numberOfCorrectAnswers }}/{{ quizQuestionLength }}</h1>
-        <RouterLink to="/">Go Back</RouterLink>
+		<!-- <RouterLink to="/">Volver</RouterLink> -->
 	</div>
 </template>
 
