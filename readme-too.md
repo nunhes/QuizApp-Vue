@@ -16,7 +16,28 @@ Normalmente, os proxectos con Vue.js están compostos por varios arquivos e carp
 
 - O arquivo ``package.json``, que contén información sobre as dependencias do proxecto e comandos para executar, probar ou construír a aplicación.
 - A carpeta ``src/``, que contén o código fonte principal da aplicación. Aquí atoparás o controlador central da aplicación - normalmente 
-``App.vue``; ee o arquivo ``index.js`` que hase conectar con teun arquivo ``index.html`` unha vez compilado para produción. TAmén neste cartafol atoparás arquivos o subcartafol ``components`` cos distintos arquivos ``.vue`` que representan cada unha das compoñentes que se empregarán na aplicación, que conteñen os compoñentes da interface de usuario, así como outros arquivos JavaScript, CSS, e recursos necesarios para a aplicación. Estes arquivos describen a aparencia e o comportamento da interfaz de usuario. *Podes ver como os diferentes elementos se relacionan entre si e como se xestiona a lóxica da aplicación.*
+``App.vue``; e o arquivo ``index.js`` que hase conectar co arquivo ``index.html`` unha vez compilado para produción. Tamén neste cartafol atoparás o subcartafol ``components`` cos distintos arquivos ``.vue`` que representan cada unha das compoñentes que se empregarán na aplicación - interface de usuario-.
+
+
+## Estrutura do cartafol ``src``
+Se trata dunha estrutura bastante sinxela.
+
+```
+/data
+    quizes.json      // preguntas
+/router
+    index.js         // xestiona as rutas
+/components
+    Card.vue         // presenta as opcións ou asignaturas
+    QuizHeader.vue   // vixia o avance
+    Question.vue     // presenta as distintas preguntas
+    Result.vue       // mostra os resultados
+    Footer.vue
+    Header.vue
+App.vue
+main.js
+```
+
 
 ```bash
 $ npm create vue@latest
@@ -62,6 +83,8 @@ Ademais empregaremos dous arquivos para as vistas que aloxaremos en `src/views`:
 - Un para amosar a pantalla principal onde se poderá seleccionar entre distintas temáticas: `QuizesView.vue`
 - Outro pa amosar *a pregunta* seleccionada: `QuizView.vue`
 
+O cartafol ``data`` conten un arquivo ``quizes.json`` que contén as preguntas: distintos obxectos ou materias que a súa vez conteñen as preguntas, incluido aquela que é a resposta acertada sinalada de xeito que sexa útil para o funcionamento da aplicación.
+
 Dado que se premite elixir entre máis dunha posibilidade - 3 - precisaremos establecer un mecanismo de enrotamento que dirixa ao usuario aos distintos apartados da páxina. 
 Aloxaremos o enrutador en `src/router`:
 
@@ -94,22 +117,11 @@ const router = createRouter({
 
 export default router
 ```
-
-## Zoom image no :hover
+Para darlle algo animación se engade a dependencia
+[``gsap``](https://gsap.com/)
+e  tamén ``vue-zoomer`` que permite facer zoom nas imaxes no :hover
 https://www.npmjs.com/package/vue-zoomer
 
 ``pnpm install vue-zoomer``
 
 
-## Estrutura do cartafol
-Será unha estrutura bastante sinxela.
-
-```
-/components
-    CustomModal.vue
-    Quiz.vue
-App.vue
-main.js
-```
-
-``App.vue`` é o arquivo principal onde se reunen tódolos compoñentes
